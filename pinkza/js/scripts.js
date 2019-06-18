@@ -27,3 +27,18 @@ window.addEventListener('load', function () {
   loader.className += " hidden"; // class "loader" then "hidden"
 });
 
+
+
+// js to create  a simple map
+ var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([20.41, 7.50]),
+          zoom: 4
+        })
+      });
