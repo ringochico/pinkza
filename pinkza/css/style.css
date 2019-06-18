@@ -17,7 +17,7 @@ html {
 
 }
 
-/*preload*/
+/*preload shows a loading screen*/
 
 .preload {
     position: fixed;
@@ -34,9 +34,10 @@ html {
     /*transition: opacity 0.5s ease;*/
 }
 
-.preload.hidden{
-  animation: fadeOut 5s;
-  animation-fill-mode: forwards;
+/*How fast the preload animation goes for*/
+.preload.hidden {
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeOut {
@@ -49,11 +50,11 @@ html {
 
 
 
+/*
 .preload-finish {
     opacity: 0;
     visibility: hidden;
     /*display: none;*/
-}
 
 
 
@@ -95,6 +96,7 @@ nav ul {
     display: flex;
     width: 100%;
     width: 100%;
+    margin-top: 48px;
     font-size: 24px;
     justify-content: space-around;
 }
@@ -155,9 +157,9 @@ nav ul {
 
 
 .banner {
-       color: white;
+    color: white;
     text-align: center;
-    height: 60vh;
+    height: 69vh;
     background-size: cover !important;
     /* display: flex; */
     align-items: center;
@@ -253,6 +255,58 @@ nav ul {
 .spinners {
     display: flex;
     justify-content: space-around;
+}
+
+
+
+/*pizza cards
+*/
+
+.pizza-cards {
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+    padding: 8px;
+    margin-top: 100px;
+
+}
+
+
+.card-product {
+    overflow: hidden;
+    height: 120px;
+    width: 26%;
+    background: white;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+        border-radius: 5px;
+
+}
+
+.card-product img {
+    height: 100%;
+    width: 120px;
+    object-fit: cover;
+}
+
+.card-product h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-product p {
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+    padding: 16px;
 }
 
 /*media queries

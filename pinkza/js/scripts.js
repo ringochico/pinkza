@@ -19,12 +19,11 @@ setInterval(function()
 {
   $('.preload img').css({'transform':'rotate('+ degree +'deg)'});
   degree++;
-}, 6)
+}, 6);
 
 // function get rid of preload
-window.addEventListener('load', () => {
-  const preloader =  document.querySelector('.preload');
-  preload.classList.add('preload-finish');
-
+window.addEventListener('load', function () {
+  const loader =  document.querySelector('.preload');
+  loader.className += " hidden"; // class "loader" then "hidden"
 });
 
