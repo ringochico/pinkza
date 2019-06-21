@@ -116,9 +116,9 @@ nav ul {
     /* top: 1px; */
     bottom: 0px;
     /* right: 8px; */
-    border-radius: 6px;
-    padding: 1px;
-    margin: 1rem;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 0rem;
 }
 
 /* Button */
@@ -152,9 +152,10 @@ nav ul {
 
 
 .btn-container {
-  text-align: center;
+    text-align: center;
 
 }
+
 /*.order-btn {
     text-decoration: none;
     text-align: center;
@@ -176,7 +177,7 @@ nav ul {
     background-color: white;
     border-radius: 8px;
     padding: 10px;
-    border: 3px solid pink;
+  /*  border: 3px solid pink;*/
     box-shadow: 1px 3px #b9b9b959;
 }
 
@@ -316,10 +317,10 @@ nav ul {
 
 }
 
-.card-product:hover {
+/*.card-product:hover {
     border: 3px solid pink;
     box-shadow: 1px 3px #b9b9b959;
-}
+}*/
 
 
 .card-product {
@@ -361,11 +362,19 @@ nav ul {
 
 /*map*/
 
- .map {
-        height: 400px;
-        width: 100%;
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#mapid {
+    height: 180px;
+}
 
-      }
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 /*media queries
 */
