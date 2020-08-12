@@ -4,7 +4,7 @@ setInterval(function()
 {
   $('.preload img').css({'transform':'rotate('+ degree +'deg)'});
   degree++;
-}, 6);
+}, 5);
 
 
 // function get rid of preload
